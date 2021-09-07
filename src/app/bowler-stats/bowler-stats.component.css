@@ -1,0 +1,19 @@
+.bowler-card {
+    max-width: 400px;
+}
+
+.elements {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.mat-elevation-z5 {
+    margin-top: 20px;
+}
+
+img {
+    height: 200px;
+    width: 400px;
+}

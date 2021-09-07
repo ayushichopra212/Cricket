@@ -1,0 +1,69 @@
+<div align="center">
+<button class="testBtn" (click)="showTestRanking()">Test</button>
+<button class="odiBtn" (click)="showOdiRanking()">ODI</button>
+<button class="t20Btn" (click)="showT20Ranking()">T20I</button>
+</div>
+
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8" *ngIf="ifOdiRanking">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+      <td mat-cell *matCellDef="let odi">{{odi.id}}</td>
+    </ng-container> 
+    <ng-container matColumnDef="Country">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header > COUNTRY </th>
+      <td mat-cell *matCellDef="let odi"> {{odi.Country}} </td>
+    </ng-container>  
+    <ng-container matColumnDef="Points">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>POINTS</th>
+      <td mat-cell *matCellDef="let odi"> {{odi.Points}} </td>
+    </ng-container>  
+    <ng-container matColumnDef="Ratings">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> RATINGS </th>
+      <td mat-cell *matCellDef="let odi"> {{odi.Ratings}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>   
+  </table>
+
+  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8" *ngIf="ifTestRanking">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+      <td mat-cell *matCellDef="let test">{{test.id}}</td>
+    </ng-container>  
+    <ng-container matColumnDef="Country">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header > COUNTRY</th>
+      <td mat-cell *matCellDef="let test"> {{test.Country}} </td>
+    </ng-container>  
+    <ng-container matColumnDef="Points">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>POINTS</th>
+      <td mat-cell *matCellDef="let test"> {{test.Points}} </td>
+    </ng-container> 
+    <ng-container matColumnDef="Ratings">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> RATINGS </th>
+      <td mat-cell *matCellDef="let test"> {{test.Ratings}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>   
+  </table>
+
+  
+  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8" *ngIf="ifT20Ranking">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+      <td mat-cell *matCellDef="let t20">{{t20.id}}</td>
+    </ng-container> 
+    <ng-container matColumnDef="Country">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header > COUNTRY</th>
+      <td mat-cell *matCellDef="let t20"> {{t20.Country}} </td>
+    </ng-container> 
+    <ng-container matColumnDef="Points">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>POINTS</th>
+      <td mat-cell *matCellDef="let t20"> {{t20.Points}} </td>
+    </ng-container> 
+    <ng-container matColumnDef="Ratings">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header > RATINGS </th>
+      <td mat-cell *matCellDef="let t20"> {{t20.Ratings}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>    
+  </table>

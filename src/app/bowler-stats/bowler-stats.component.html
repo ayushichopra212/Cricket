@@ -1,0 +1,22 @@
+<div class="mat-elevation-z5" *ngFor="let bowlerStat of bowlerStats" (click)="toBowlerDetails(bowlerStat)">
+  <mat-card class="bowler-card">
+    <mat-card-header>
+      <mat-card-title>{{bowlerStat.Name}}</mat-card-title>
+      <mat-card-subtitle><b> TOTAL WICKETS : </b>{{bowlerStat.wickets}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="bowlerStat.imagePath">
+    <mat-card-content>
+      <div class="elements">
+        <div>
+          MATCHES <span>{{bowlerStat.Matches}}</span>
+        </div>
+        <div>
+          BEST <span>{{bowlerStat.best}}</span>
+        </div>
+        <div>
+          AVERAGE <span>{{bowlerStat.average}}</span>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

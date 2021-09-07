@@ -1,0 +1,30 @@
+table {
+    background-color: rgb(128, 173, 231);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.mat-header-cell {
+    font-size: large;
+    color: black;
+    border: black ;
+}
+
+button {
+    display: inline-block;
+    border-radius:2em;
+    box-sizing: border-box;
+    padding:0.3em 1.2em;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font: weight 300px;; 
+    text-align:center;
+    margin-top: 10px;
+}
+
+.odiBtn , .testBtn , .t20Btn {
+    margin-left: 15px;
+    margin-top: 10px;
+}

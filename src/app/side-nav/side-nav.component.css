@@ -1,0 +1,17 @@
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background-color: rgb(43, 168, 226);
+}
+
+.sidenav a {
+    padding: 6px 0px 6px 16px;
+    margin-top: 10%;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+}
+
+

@@ -1,0 +1,72 @@
+[
+    {
+        "Country": "England",
+        "Points": "7786",
+        "Ratings": "278",
+        "image": "",
+        "id": 1
+    },
+    {
+        "Country": "India",
+        "Points": "7093",
+        "Ratings": "273",
+        "image": "",
+        "id": 2
+    },
+    {
+        "Country": "New Zealand",
+        "Points": "6048",
+        "Ratings": "263",
+        "image": "",
+        "id": 3
+    },
+    {
+        "Country": "Pakistan",
+        "Points": "8883",
+        "Ratings": "261",
+        "image": "",
+        "id": 4
+    },
+    {
+        "Country": "South Africa",
+        "Points": "6640",
+        "Ratings": "246",
+        "image": "",
+        "id": 5
+    },
+    {
+        "Country": "Australia",
+        "Points": "7923",
+        "Ratings": "240",
+        "image": "",
+        "id": 6
+    },
+    {
+        "Country": "Afghanistan",
+        "Points": "2826",
+        "Ratings": "236",
+        "image": "",
+        "id": 7
+    },
+    {
+        "Country": "Sri Lanka",
+        "Points": "4456",
+        "Ratings": "235",
+        "image": "",
+        "id": 8
+    },
+    {
+        "Country": "West Indies",
+        "Points": "6792",
+        "Ratings": "234",
+        "image": "",
+        "id": 9
+    },
+    {
+        "Country": "Bangladesh",
+        "Points": "4915",
+        "Ratings": "234",
+        "image": "",
+        "id": 10
+    }
+]
