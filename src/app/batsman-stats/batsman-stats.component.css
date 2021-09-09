@@ -2,7 +2,7 @@
     max-width: 400px;
 }
 
-.elements {
+.batsmanElements {
     display: flex;
     justify-content: space-between;
     font-size: 15px;
@@ -11,4 +11,8 @@
 
 .mat-elevation-z5 {
     margin-top: 20px;
+}
+
+img {
+    height: 230px;
 }

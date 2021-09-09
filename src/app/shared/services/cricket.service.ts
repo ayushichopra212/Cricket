@@ -6,6 +6,7 @@ import t20Ranking from '../mockData/t20Ranking.json';
 import batsmanStats from '../mockData/batsmanStats.json';
 import bowlerStats from '../mockData/bowlerStats.json';
 import batsmanDetails from '../mockData/batsmanDetails.json';
+import bowlerDetails from '../mockData/bowlerDetails.json'
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +18,7 @@ export class CricketService {
   batsman : Array<any> = batsmanStats;
   bowler : Array<any> = bowlerStats;
   batsmanDetail : Array<any> = batsmanDetails;
+  bowlerDetail : Array<any> = bowlerDetails;
 
   constructor() { }
 
@@ -41,6 +43,10 @@ export class CricketService {
   }
 
   getBatsmanDetails() {
-    return of(this.batsmanDetail)
+    return of(this.batsmanDetail);
+  }
+
+  getBowlerDetails() {
+    return of(this.bowlerDetail);
   }
 }

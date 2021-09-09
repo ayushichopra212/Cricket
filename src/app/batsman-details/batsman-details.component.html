@@ -1,1 +1,14 @@
-<p>{{batsmanId}}</p>
+
+<div class="container" id="htmlData">
+    <highcharts-chart [Highcharts]="Highcharts" [options]="barGraphChart"
+        [ngStyle]="{'width':35 +'%','height':height+'%','display':'block'}">
+    </highcharts-chart>
+    <highcharts-chart [Highcharts]="Highcharts" [options]="pieChart"
+        [ngStyle]="{'width':50 +'%','height':height+'%','display':'block'}">
+    </highcharts-chart>
+</div>
+<div class="button">
+    <button mat-raised-button color="accent" (click)="openPdf()">Download pdf</button>
+</div>
+
+

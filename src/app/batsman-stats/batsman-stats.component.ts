@@ -8,8 +8,8 @@ import { CricketService } from '../shared/services/cricket.service';
   styleUrls: ['./batsman-stats.component.css']
 })
 export class BatsmanStatsComponent implements OnInit {
-  batsmanStats : any;
-
+  batsmanStats : any[];
+  
   constructor(private service : CricketService,
               private router : Router) { }
 

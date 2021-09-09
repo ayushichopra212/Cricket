@@ -1,8 +1,8 @@
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: 160px;
     position: fixed;
-    background-color: rgb(43, 168, 226);
+    background-color: #ff9999
 }
 
 .sidenav a {

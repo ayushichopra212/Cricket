@@ -1,9 +1,13 @@
 table {
-    background-color: rgb(128, 173, 231);
+    background-color:#ffe6e6;
     width: 60%;
-    margin-left: auto;
+    margin-left: 26%;
     margin-right: auto;
     margin-top: 20px;
+}
+
+.container1 {
+    margin-left: 10%;
 }
 
 .mat-header-cell {
@@ -27,4 +31,10 @@ button {
 .odiBtn , .testBtn , .t20Btn {
     margin-left: 15px;
     margin-top: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-left: 80%;
 }

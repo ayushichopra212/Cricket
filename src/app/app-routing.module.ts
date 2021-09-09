@@ -9,8 +9,8 @@ import { TeamRankingsComponent } from './team-rankings/team-rankings.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'sidenav', component: SideNavComponent},
+  { path: '', component: StatisticsComponent},
+  // { path: 'sidenav', component: SideNavComponent},
   { path: 'ranking', component: TeamRankingsComponent},
   { path: 'statistics', component: StatisticsComponent},
   { path: 'batsman', component: BatsmanDetailsComponent},

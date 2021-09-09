@@ -2,12 +2,16 @@
     font-size: 30px;
 }
 
-
 .rankingLink , .statsLink {
     margin-left: 20px;
-    color: white;
+    color:#ff6666;
     text-decoration: none;
 }
+
+mat-toolbar {
+    color: #4d0000;
+}
+
 
 
 

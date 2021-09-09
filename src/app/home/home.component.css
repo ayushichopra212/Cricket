@@ -1,7 +1,6 @@
-
-p {
-    margin-top: 10px;
-    margin-left: 50px;
-    font-size: large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.container1 {
+    height: 100%;
+    background-image: url(https://img.freepik.com/free-photo/abstract-bokeh-pastel-background_1715-2113.jpg?size=626&ext=jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
 }

@@ -1,1 +1,14 @@
-<p>bowler-details works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <highcharts-chart [Highcharts]="Highcharts"
+                              [options] = "barGraphChart">
+            </highcharts-chart>
+        </div>
+        <div class="col-md-6">
+            <highcharts-chart [Highcharts]="Highcharts"
+                              [options]="pieChart">
+            </highcharts-chart>
+        </div>
+    </div>
+</div>
