@@ -1,0 +1,77 @@
+<div id="htmlData">
+    <div *ngIf="ifOdiRanking">
+      <table mat-table [dataSource]="tableDataSource" matSort class="mat-elevation-z8">
+        <ng-container [matColumnDef]="column" *ngFor = "let column of displayedColumns;">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef > {{column}} </th>
+          <td mat-cell *matCellDef="let odi">{{odi}}</td>
+        </ng-container>
+        <!-- <ng-container matColumnDef="Country">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef > {{column.name}}</th>
+          <td mat-cell *matCellDef="let odi"> {{odi.Country}} </td>
+        </ng-container>
+        <ng-container matColumnDef="Points">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef >{{column.name}}</th>
+          <td mat-cell *matCellDef="let odi"> {{odi.Points}} </td>
+        </ng-container>
+        <ng-container matColumnDef="Ratings">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef> {{column.name}}</th>
+          <td mat-cell *matCellDef="let odi"> {{odi.Ratings}} </td>
+        </ng-container> -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <mat-paginator #paginator [pageSizeOptions]="[1,3,5]" showFirstLastButtons>
+      </mat-paginator>
+    </div>
+  
+    <div *ngIf="ifTestRanking">
+      <table mat-table [dataSource]="tableDataSource" matSort class="mat-elevation-z8" >
+        <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef >{{column}} </th>
+          <td mat-cell *matCellDef="let test">{{test.id}}</td>
+        </ng-container>
+        <!-- <ng-container matColumnDef="Country">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef > COUNTRY</th>
+          <td mat-cell *matCellDef="let test"> {{test.Country}} </td>
+        </ng-container>
+        <ng-container matColumnDef="Points">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef >POINTS</th>
+          <td mat-cell *matCellDef="let test"> {{test.Points}} </td>
+        </ng-container>
+        <ng-container matColumnDef="Ratings">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef> RATINGS </th>
+          <td mat-cell *matCellDef="let test"> {{test.Ratings}} </td>
+        </ng-container> -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <mat-paginator #paginator [pageSizeOptions]="[1,3,5]" showFirstLastButtons>
+      </mat-paginator>
+    </div>
+  
+    <div *ngIf="ifT20Ranking">
+      <table mat-table [dataSource]="tableDataSource" matSort class="mat-elevation-z8" >
+        <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef > {{column}} </th>
+          <td mat-cell *matCellDef="let t20">{{t20.id}}</td>
+        </ng-container>
+        <!-- <ng-container matColumnDef="Country">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef > COUNTRY</th>
+          <td mat-cell *matCellDef="let t20"> {{t20.Country}} </td>
+        </ng-container>
+        <ng-container matColumnDef="Points">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef >POINTS</th>
+          <td mat-cell *matCellDef="let t20"> {{t20.Points}} </td>
+        </ng-container>
+        <ng-container matColumnDef="Ratings">
+          <th mat-header-cell mat-sort-header *matHeaderCellDef> RATINGS </th>
+          <td mat-cell *matCellDef="let t20"> {{t20.Ratings}} </td>
+        </ng-container> -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <mat-paginator #paginator [pageSizeOptions]="[1,3,5]" showFirstLastButtons>
+      </mat-paginator>
+    </div>
+  </div>
+  

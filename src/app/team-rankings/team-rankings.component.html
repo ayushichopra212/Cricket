@@ -4,7 +4,7 @@
   <button class="t20Btn" (click)="showT20Ranking()">T20I</button>
 </div>
 
-<div id="htmlData">
+<!-- <div id="htmlData">
   <div *ngIf="ifOdiRanking">
     <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
       <ng-container matColumnDef="id">
@@ -79,7 +79,17 @@
     <mat-paginator #paginator [pageSizeOptions]="[1,3,5]" showFirstLastButtons>
     </mat-paginator>
   </div>
-</div>
+</div> -->
+
+<app-table [tests]="tests"
+           [odis]="odis" 
+           [t20s]="t20s" 
+           [tableData]="dataSource" 
+           [tableColumns]="displayedColumns"
+           [ifTestRanking]="ifTestRanking" 
+           [ifOdiRanking]="ifOdiRanking" 
+           [ifT20Ranking]="ifT20Ranking">
+</app-table>
 
 <div class="button">
   <button mat-raised-button color="accent" (click)="openPdf()">DOWNLOAD PDF</button>

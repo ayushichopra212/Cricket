@@ -15,6 +15,7 @@ import { BatsmanDetailsComponent } from './batsman-details/batsman-details.compo
 import { BowlerDetailsComponent } from './bowler-details/bowler-details.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { TableComponent } from './shared/reusableComponents/table/table.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
     BowlerStatsComponent,
     BatsmanDetailsComponent,
     BowlerDetailsComponent,
-    SideNavComponent
+    SideNavComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

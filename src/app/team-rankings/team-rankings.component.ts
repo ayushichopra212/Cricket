@@ -14,12 +14,12 @@ export class TeamRankingsComponent implements OnInit {
   tests : any;
   t20s : any;
 
-  ifTestRanking : boolean = true
-  ifOdiRanking : boolean = false
-  ifT20Ranking : boolean = false
+  ifTestRanking : boolean = true;
+  ifOdiRanking : boolean = false;
+  ifT20Ranking : boolean = false;
 
   dataSource : any;
-  displayedColumns: string[] = ['id', 'Country', 'Points', 'Ratings'];
+  displayedColumns : any;
 
   @ViewChild('htmlData', {static: false}) htmlData:ElementRef;
   
@@ -50,6 +50,16 @@ export class TeamRankingsComponent implements OnInit {
   } 
 
   ngOnInit() {
+    this.displayedColumns = [
+      { name : 'ID',
+        dataKey : 'id'},
+      { name : 'COUNTRY',
+        dataKey : 'country'},
+      { name : 'POINTS',
+        dataKey : 'points'},
+      { name : 'RATINGS',
+        dataKey : 'ratings'}
+    ]
     this.service.getTestRanking()
       .subscribe(response => {
         this.tests = response;
